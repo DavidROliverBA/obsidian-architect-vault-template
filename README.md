@@ -25,6 +25,48 @@ This is a **production-ready Obsidian vault template** designed specifically for
 
 ---
 
+## 📸 Screenshots
+
+> **Note:** Screenshots are currently placeholders. See `screenshots/README.md` for capture guidelines. Contributions welcome!
+
+### Dashboard - Your Central Hub
+
+![Dashboard Overview](screenshots/dashboard.png)
+
+*The Dashboard provides quick navigation to all MOCs, active tasks, current projects, and recent meetings with real-time statistics.*
+
+### Projects MOC - Dynamic Dataview Queries
+
+![Projects MOC](screenshots/projects-moc.png)
+
+*Projects automatically organize by status (Active, Paused, Completed) with priority filtering and timeline tracking.*
+
+### Architecture Decision Record (ADR) Example
+
+![ADR Example](screenshots/adr-example.png)
+
+*Complete ADR showing context, decision, rationale, consequences, and alternatives with relationship tracking.*
+
+### Knowledge Graph View
+
+![Graph View](screenshots/graph-view.png)
+
+*Visual representation of interconnected notes - people, projects, meetings, and decisions forming a knowledge graph.*
+
+### Daily Note Workflow
+
+![Daily Note](screenshots/daily-note.png)
+
+*Daily notes capture tasks, reflections, and links to ongoing work with yesterday/today/tomorrow structure.*
+
+### Vault Quality Dashboard
+
+![Quality Dashboard](screenshots/quality-dashboard.png)
+
+*Built-in quality monitoring tracks orphaned notes, stale content, missing metadata, and ADR health.*
+
+---
+
 ## 🚀 Quick Start
 
 ### Prerequisites
@@ -38,7 +80,7 @@ This is a **production-ready Obsidian vault template** designed specifically for
 
 1. **Clone this repository**:
    ```bash
-   git clone https://github.com/yourusername/obsidian-architect-vault-template.git
+   git clone https://github.com/DavidROliverBA/obsidian-architect-vault-template.git
    cd obsidian-architect-vault-template
    ```
 
