@@ -17,7 +17,7 @@ This is a **production-ready Obsidian vault template** designed specifically for
 
 - **Metadata-Driven Organization** - Notes organized by `type` field, not folders
 - **Powerful Navigation** - 12 Maps of Content (MOCs) powered by Dataview queries
-- **Claude Code Integration** - 9 core AI-assisted workflows for automation
+- **Claude Code Integration** - 11 core AI-assisted workflows for automation
 - **Quality Indicators** - Track confidence, freshness, and verification status
 - **Relationship Tracking** - Link ADRs, projects, and decisions
 - **Example Content** - Rich examples showing best practices
@@ -72,9 +72,15 @@ This is a **production-ready Obsidian vault template** designed specifically for
 ### Prerequisites
 
 1. **Obsidian** - Download from [obsidian.md](https://obsidian.md)
-2. **Required Plugins**:
-   - [Dataview](https://github.com/blacksmithgu/obsidian-dataview) - Power queries and navigation
-   - [Templater](https://github.com/SilentVoid13/Templater) - Note templates with automation
+
+2. **Required Obsidian Plugins** (install from Community Plugins):
+   - **[Dataview](https://github.com/blacksmithgu/obsidian-dataview)** - Power queries and navigation for MOCs
+   - **[Templater](https://github.com/SilentVoid13/Templater)** - Note templates with automation and dynamic content
+
+3. **Optional Python Tools** (for document processing skills):
+   - **docling** - PDF/PPTX processing: `pip3 install docling`
+   - **python-pptx** - PowerPoint extraction: `pip3 install python-pptx`
+   - **poppler** - PDF utilities: `brew install poppler` (macOS) or `apt-get install poppler-utils` (Linux)
 
 ### Installation
 
@@ -118,7 +124,7 @@ obsidian-architect-vault-template/
 ├── +Templates/             # Note templates for each type
 ├── +Inbox/                 # Temporary landing zone for new notes
 ├── .claude/                # Claude Code integration
-│   ├── skills/             # 9 AI-assisted workflows
+│   ├── skills/             # 11 AI-assisted workflows
 │   ├── context/            # Domain-specific context (customize)
 │   └── vault-conventions.md
 ├── .obsidian/              # Obsidian configuration
@@ -300,7 +306,7 @@ See `+Meetings/README.md` for detailed guide.
 
 ## 🤖 Claude Code Skills
 
-This vault includes 9 core AI-assisted workflows accessible via Claude Code:
+This vault includes 11 core AI-assisted workflows accessible via Claude Code:
 
 ### Daily Workflow
 - `/daily` - Create today's daily note
@@ -313,6 +319,10 @@ This vault includes 9 core AI-assisted workflows accessible via Claude Code:
 - `/pdf-to-page <path>` - Convert PDF to Page note with docling (Sonnet or Opus analysis)
 - `/pptx-to-page <path>` - Convert PowerPoint to Page note (quick or visual mode)
 
+### Visual Analysis
+- `/screenshot-analyze <path>` - Analyze screenshots with OCR and visual inspection (3 Sonnet sub-agents)
+- `/diagram-review <path>` - Analyze architecture diagrams and technical drawings (4 Sonnet sub-agents)
+
 ### Quick Capture
 - `/task <title>` - Quick-create task with priority
 - `/person <name>` - Create person note (clean links without prefix)
@@ -323,7 +333,7 @@ This vault includes 9 core AI-assisted workflows accessible via Claude Code:
 
 **See** `.claude/skills/` directory for all skill definitions.
 
-**Note:** Additional skills can be added as needed. The framework supports 26+ workflows - these 9 cover core daily operations.
+**Note:** Additional skills can be added as needed. The framework supports 26+ workflows - these 11 cover core daily operations.
 
 ---
 
