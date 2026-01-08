@@ -1,0 +1,507 @@
+# Obsidian Architect Vault Template
+
+> A comprehensive, metadata-driven Obsidian vault template for Solutions Architects to manage projects, decisions, meetings, and technical knowledge.
+
+## 🎯 What is This?
+
+This is a **production-ready Obsidian vault template** designed specifically for Solutions Architects, Technical Architects, and Enterprise Architects. It provides a complete organizational framework for:
+
+- **Architecture Decision Records (ADRs)** - Document and track technical decisions
+- **Project Management** - Track active projects, tasks, and deliverables
+- **Meeting Notes** - Capture and link meetings to projects and people
+- **Knowledge Management** - Build a personal knowledge base with cross-linked notes
+- **Team Directory** - Track stakeholders, colleagues, and external contacts
+- **Quality Monitoring** - Built-in dashboard to maintain vault health
+
+### ✨ Key Features
+
+- **Metadata-Driven Organization** - Notes organized by `type` field, not folders
+- **Powerful Navigation** - 12 Maps of Content (MOCs) powered by Dataview queries
+- **Claude Code Integration** - 26 AI-assisted workflows for automation
+- **Quality Indicators** - Track confidence, freshness, and verification status
+- **Relationship Tracking** - Link ADRs, projects, and decisions
+- **Example Content** - Rich examples showing best practices
+- **Zero Lock-In** - Plain markdown files, works with any text editor
+
+---
+
+## 🚀 Quick Start
+
+### Prerequisites
+
+1. **Obsidian** - Download from [obsidian.md](https://obsidian.md)
+2. **Required Plugins**:
+   - [Dataview](https://github.com/blacksmithgu/obsidian-dataview) - Power queries and navigation
+   - [Templater](https://github.com/SilentVoid13/Templater) - Note templates with automation
+
+### Installation
+
+1. **Clone this repository**:
+   ```bash
+   git clone https://github.com/yourusername/obsidian-architect-vault-template.git
+   cd obsidian-architect-vault-template
+   ```
+
+2. **Open in Obsidian**:
+   - Launch Obsidian
+   - Click "Open folder as vault"
+   - Select the `obsidian-architect-vault-template` directory
+
+3. **Install Required Plugins**:
+   - Go to Settings → Community Plugins → Browse
+   - Install "Dataview" and "Templater"
+   - Enable both plugins in Settings → Community Plugins
+
+4. **Review the Dashboard**:
+   - Open `Dashboard - Dashboard.md`
+   - Explore the Maps of Content (MOCs)
+   - Review example notes
+
+5. **Customize** (see [Customization Guide](#-customization-guide) below)
+
+---
+
+## 📁 Structure Overview
+
+### Directory Organization
+
+```
+obsidian-architect-vault-template/
+├── +Attachments/           # All binary files (images, PDFs, docs)
+├── +Daily/                 # Daily journal entries (organized by year)
+│   ├── 2026/
+│   └── README.md
+├── +Meetings/              # All meeting notes
+│   └── README.md
+├── +Templates/             # Note templates for each type
+├── +Inbox/                 # Temporary landing zone for new notes
+├── .claude/                # Claude Code integration
+│   ├── skills/             # 26 AI-assisted workflows
+│   ├── context/            # Domain-specific context (customize)
+│   └── vault-conventions.md
+├── .obsidian/              # Obsidian configuration
+├── scripts/                # Python utility scripts
+├── [Root Directory]        # All content notes (metadata-driven)
+│   ├── Person notes (e.g., "Jane Smith.md")
+│   ├── Project notes (e.g., "Project - Cloud Migration.md")
+│   ├── ADRs (e.g., "ADR - Use Kubernetes.md")
+│   ├── Tasks (e.g., "Task - Review ADR.md")
+│   ├── Pages (e.g., "Page - Architecture Principles.md")
+│   └── MOCs (e.g., "MOC - Projects MOC.md")
+└── README.md               # This file
+```
+
+### Note Types (13 Total)
+
+| Type | Prefix | Example | Purpose |
+|------|--------|---------|---------|
+| **Person** | None | `Jane Smith.md` | Contact information |
+| **Project** | `Project -` | `Project - Cloud Migration.md` | Project tracking |
+| **Meeting** | `Meeting -` | `Meeting - 2026-01-07 Kickoff.md` | Meeting minutes |
+| **Task** | `Task -` | `Task - Review ADR.md` | Task management |
+| **ADR** | `ADR -` | `ADR - Use Kubernetes.md` | Architecture decisions |
+| **Page** | `Page -` | `Page - Tech Stack.md` | Long-form documentation |
+| **Weblink** | `Weblink -` | `Weblink - Martin Fowler.md` | Saved web resources |
+| **Organisation** | `Organisation -` | `Organisation - Your Company.md` | Companies/vendors |
+| **MOC** | `MOC -` | `MOC - Projects MOC.md` | Navigation hubs |
+| **DailyNote** | None | `2026-01-07.md` | Daily journal |
+| **AtomicNote** | `Atomic Note -` | `Atomic Note - SOLID.md` | Single-concept notes |
+| **Course** | `Course -` | `Course - Cloud Architecture.md` | Learning tracking |
+| **Zettel** | `Zettel -` | `Zettel - Research.md` | Personal notes |
+
+---
+
+## 🧭 Navigation System
+
+### Dashboard (Central Hub)
+
+Start here: `Dashboard - Dashboard.md`
+
+The Dashboard provides:
+- **Quick Navigation** - Links to all MOCs
+- **Open Tasks** - Filtered by priority (high/medium/low)
+- **Active Projects** - Current work with status
+- **Recent Meetings** - Last 10 meetings
+- **Statistics** - Note counts by type
+- **Quick Capture** - Create new notes
+
+### Maps of Content (MOCs)
+
+**Core Navigation** (6 MOCs):
+1. **Tasks MOC** - All tasks by priority/status
+2. **Projects MOC** - Projects by status
+3. **People MOC** - Contact directory
+4. **Meetings MOC** - Meeting history
+5. **ADRs MOC** - Architecture decisions
+6. **Weblinks MOC** - External resources
+
+**Content & Organization** (3 MOCs):
+7. **Technology & Architecture MOC** - Tech platforms
+8. **Organisations MOC** - Vendors/partners
+9. **Vault Quality Dashboard** - Health monitoring
+
+**Domain-Specific** (2 example MOCs):
+10. **Cloud Architecture MOC** - Example specialization
+11. **Data Platform MOC** - Example domain knowledge
+
+---
+
+## ⚙️ Customization Guide
+
+### 1. Replace Example Content
+
+**People** (3 examples to replace):
+- `Jane Smith.md` → Your manager
+- `Alex Johnson.md` → Colleague
+- `Dr. Sarah Chen.md` → External contact
+
+**Projects** (4 examples to replace):
+- `Project - Cloud Migration.md`
+- `Project - API Gateway Modernization.md`
+- `Project - Legacy System Decommission.md`
+- `Project - Research - Event-Driven Architecture.md`
+
+**Tip**: Keep the structure, replace names and content.
+
+### 2. Update Context Files
+
+Customize `.claude/context/` for Claude Code:
+
+- `projects-template.md` → Add your real projects
+- `technology-template.md` → Document your tech stack
+- `people-template.md` → Add key stakeholders
+- `acronyms-template.md` → Your organization's acronyms
+- `architecture-template.md` → Your architecture patterns
+- `organisations-template.md` → Your vendors/partners
+
+### 3. Adapt ADR Approval Workflow
+
+Edit `+Templates/ADR.md`:
+
+```yaml
+approvers:
+  - Your Architecture Lead
+  - Your Tech Lead
+  - Your Security Lead
+```
+
+Replace with your organization's approval structure.
+
+### 4. Configure External Integrations (Optional)
+
+**JIRA Integration**:
+- ADR template has `externalRef` field
+- Link to JIRA tickets: `externalRef: PROJ-123`
+
+**Notion Sync**:
+- See `/sync-notion` skill in `.claude/skills/sync-notion.md`
+- Configure Notion API credentials
+
+---
+
+## 📝 Best Practices
+
+### Daily Note Workflow
+
+1. **Create daily note**: Use `/daily` skill or Templater
+2. **Capture**:
+   - Tasks for today
+   - Notes from meetings
+   - Reflections and learnings
+3. **Link**: Connect to projects, people, meetings
+4. **Review**: End-of-day reflection
+
+See `+Daily/README.md` for detailed guide.
+
+### Meeting Capture Process
+
+1. **Before meeting**: Create note with `/meeting` skill
+2. **During meeting**:
+   - Capture key points
+   - Note action items
+   - Link attendees: `[[Person Name]]`
+3. **After meeting**:
+   - Link to related project: `project: "[[Project - Name]]"`
+   - Extract tasks to Task notes
+   - Add to Meeting MOC (automatic via Dataview)
+
+See `+Meetings/README.md` for detailed guide.
+
+### ADR Creation Workflow
+
+1. **Identify decision**: Technical choice requiring documentation
+2. **Create ADR**: Use `/adr` skill
+3. **Fill sections**:
+   - **Context**: Problem statement
+   - **Decision**: What was decided
+   - **Rationale**: Why this decision
+   - **Consequences**: Positive/negative impacts
+   - **Alternatives**: Options considered
+4. **Link relationships**: `relatedTo`, `supersedes`, `dependsOn`
+5. **Get approval**: Update `approvers` and `status`
+6. **Publish**: Set `status: accepted`
+
+### Project Tracking
+
+1. **Create project**: Use template from `+Templates/Project.md`
+2. **Set metadata**:
+   - `status: active | paused | completed`
+   - `priority: high | medium | low`
+   - `category: <program-name>` (optional)
+3. **Link related items**:
+   - Tasks: `project: "[[Project - Name]]"`
+   - Meetings: `project: "[[Project - Name]]"`
+   - ADRs: `project: "[[Project - Name]]"`
+4. **Track in MOC**: Projects MOC auto-updates via Dataview
+
+---
+
+## 🤖 Claude Code Skills
+
+This vault includes 26 AI-assisted workflows accessible via Claude Code:
+
+### Daily Workflow
+- `/daily` - Create today's daily note
+- `/meeting <title>` - Create meeting note
+- `/weekly-summary` - Generate weekly summary
+
+### Architecture Work
+- `/adr <title>` - Create new ADR
+- `/project-status <project>` - Generate status report
+- `/find-decisions <topic>` - Find related decisions
+
+### Research & Discovery
+- `/related <topic>` - Find all related notes
+- `/summarize <note>` - Summarize content
+- `/timeline <project>` - Chronological history
+
+### Maintenance
+- `/orphans` - Find notes with no backlinks
+- `/broken-links` - Find broken wiki-links
+- `/rename <pattern>` - Batch rename files
+
+### Document Processing
+- `/pdf-to-page <path>` - Convert PDF to Page note
+- `/pptx-to-page <path>` - Convert PowerPoint to Page
+- `/screenshot-analyze <path>` - Analyze screenshot with OCR
+- `/diagram-review <path>` - Analyze architecture diagrams
+
+### Quick Capture
+- `/task <title>` - Quick-create task
+- `/person <name>` - Create person note
+- `/weblink <url>` - Save URL with analysis
+- `/youtube <url>` - Save video with transcript
+
+**See** `.claude/skills/` directory for all skill definitions.
+
+---
+
+## 📊 Quality Monitoring
+
+Use `MOC - Vault Quality Dashboard.md` to monitor vault health:
+
+- **Stale Content** - Notes not reviewed in >12 months
+- **Low Confidence** - Notes needing verification
+- **Orphaned Notes** - No backlinks (isolated)
+- **Missing Metadata** - Incomplete frontmatter
+- **ADR Health** - Missing status/relationships
+- **Statistics** - Note distribution by type
+
+**Recommended Review Cadence**:
+- **Weekly**: Check open tasks, active projects
+- **Monthly**: Review stale content (5-10 notes)
+- **Quarterly**: Comprehensive quality audit
+
+---
+
+## 🛠️ Advanced Features
+
+### Quality Indicators
+
+Add to critical notes (ADRs, Pages, Projects):
+
+```yaml
+# Quality Indicators
+confidence: high | medium | low     # How authoritative
+freshness: current | recent | stale # How up-to-date
+source: primary | secondary | synthesis | external
+verified: true | false              # Fact-checked
+reviewed: 2026-01-07               # Last review date
+```
+
+**Benefits**:
+- AI can prioritize high-confidence content
+- Identify content needing updates
+- Track information provenance
+
+### Relationship Metadata
+
+Link related notes (especially ADRs):
+
+```yaml
+# Relationships
+relatedTo: ["[[ADR - Related Decision]]"]
+supersedes: ["[[ADR - Old Approach]]"]     # Replaces
+dependsOn: ["[[ADR - Foundation]]"]        # Requires
+```
+
+**Benefits**:
+- Navigate decision evolution
+- Understand dependencies
+- Build knowledge graph
+
+### Hierarchical Tags
+
+Use domain-specific tagging:
+
+```yaml
+tags: [ADR, activity/architecture, technology/kubernetes, project/cloud-migration, domain/infrastructure]
+```
+
+**Categories**:
+- `activity/` - architecture, implementation, evaluation
+- `technology/` - kubernetes, aws, postgresql, etc.
+- `project/` - cloud-migration, api-modernization, etc.
+- `domain/` - infrastructure, data, security, etc.
+
+---
+
+## 🐛 Troubleshooting
+
+### Dataview Queries Not Working
+
+**Problem**: MOCs show `Dataview: Query not found` or empty results
+
+**Solution**:
+1. Verify Dataview plugin is installed and enabled
+2. Check Settings → Dataview → Enable JavaScript Queries
+3. Reload Obsidian (Ctrl/Cmd + R)
+
+### Templates Not Creating Files
+
+**Problem**: Templates don't auto-fill or rename
+
+**Solution**:
+1. Verify Templater plugin is installed and enabled
+2. Check Settings → Templater → Template folder location = `+Templates`
+3. Check Settings → Templater → Enable "Trigger Templater on new file creation"
+
+### Broken Links After Customization
+
+**Problem**: Links show as broken after replacing example content
+
+**Solution**:
+1. Use `/rename` skill to batch rename with link updates
+2. Or: Manually update links using Obsidian's backlink pane
+3. Run `/broken-links` skill to find remaining issues
+
+### Claude Skills Not Working
+
+**Problem**: `/skill` commands not recognized
+
+**Solution**:
+1. Ensure you're using Claude Code CLI (not web interface)
+2. Check `.claude/skills/` directory exists
+3. Verify skill file format (see vault-conventions.md)
+4. Check Claude Code settings: `claude settings show`
+
+---
+
+## 📚 Additional Resources
+
+### Example Notes
+
+Review these examples for best practices:
+- `ADR - Use Kubernetes for Container Orchestration.md` - Complete ADR example
+- `Project - Cloud Migration.md` - Active project example
+- `Page - Architecture Principles.md` - Documentation example
+- `+Daily/2026/2026-01-07.md` - Daily note example
+- `+Meetings/Meeting - 2026-01-07 Project Kickoff.md` - Meeting example
+
+### Documentation Files
+
+- `Page - How to Use This Vault.md` - Internal usage guide
+- `Page - Vault Setup Checklist.md` - Onboarding checklist
+- `+Daily/README.md` - Daily note practice guide
+- `+Meetings/README.md` - Meeting capture guide
+- `.claude/vault-conventions.md` - Metadata formatting rules
+
+### External Resources
+
+- [Obsidian Documentation](https://help.obsidian.md/)
+- [Dataview Plugin Guide](https://blacksmithgu.github.io/obsidian-dataview/)
+- [Templater Plugin Guide](https://silentvoid13.github.io/Templater/)
+- [Claude Code Documentation](https://claude.com/code)
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions! Please see `CONTRIBUTING.md` for:
+- How to suggest improvements
+- How to report bugs
+- Code of conduct
+- Development workflow
+
+---
+
+## 📄 License
+
+MIT License - see `LICENSE` file for details.
+
+Free to use, modify, and distribute. No attribution required (but appreciated!).
+
+---
+
+## 🙏 Acknowledgments
+
+This template is based on real-world Solutions Architecture practice at enterprise organizations. Special thanks to the Obsidian community for plugins and inspiration.
+
+**Built with**:
+- [Obsidian](https://obsidian.md) - The knowledge base tool
+- [Dataview](https://github.com/blacksmithgu/obsidian-dataview) - Query engine
+- [Templater](https://github.com/SilentVoid13/Templater) - Template automation
+- [Claude Code](https://claude.com/code) - AI-assisted workflows
+
+---
+
+## 🗺️ Roadmap
+
+**v1.1** (Planned):
+- Video walkthrough
+- More domain-specific MOC examples
+- Integration templates (Jira, ADO, GitHub)
+- Mobile optimization
+
+**v1.2** (Future):
+- Obsidian Publish demo site
+- Community skill contributions
+- Alternative theme support
+- Docker-based setup
+
+---
+
+## ❓ FAQ
+
+**Q: Can I use this for personal knowledge management?**
+A: Yes! While designed for architects, it works for any knowledge-intensive role.
+
+**Q: Do I need Claude Code?**
+A: No. The vault works without it. Claude Code adds AI-assisted workflows (optional).
+
+**Q: Can I use this with Notion/Roam/Logseq?**
+A: Partially. It's optimized for Obsidian, but markdown is portable.
+
+**Q: How do I update to new template versions?**
+A: Pull changes from git, merge carefully (your content stays in separate notes).
+
+**Q: Is this production-ready?**
+A: Yes. This structure has been used in enterprise environments.
+
+---
+
+**Getting Started**: Open `Dashboard - Dashboard.md` and start exploring!
+
+**Questions?**: Open an issue on GitHub or check the FAQ above.
+
+**Enjoy building your knowledge base! 🚀**

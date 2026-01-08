@@ -1,0 +1,45 @@
+# Obsidian workspace (user-specific)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+
+# Obsidian cache
+.obsidian/cache
+
+# Trash
+.trash/
+
+# Mac OS
+.DS_Store
+
+# Smart Connections plugin (user-specific embeddings)
+.smart-env/
+
+# Capacities sync (if using)
+.capacities/
+
+# User-specific plugin data
+.obsidian/plugins/*/data.json
+
+# Backup files
+*.bak
+*~
+
+# Temporary files
+.tmp/
+tmp/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
