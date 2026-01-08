@@ -1,3 +1,7 @@
+---
+context: fork
+---
+
 # Find Orphaned Notes Skill
 
 Identify notes with no backlinks (potential isolated content).

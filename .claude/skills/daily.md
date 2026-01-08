@@ -1,3 +1,7 @@
+---
+context: fork
+---
+
 # Daily Note Skill
 
 Create today's daily note from template.

@@ -1,3 +1,7 @@
+---
+context: fork
+---
+
 # ADR Creation Skill
 
 Create a new Architecture Decision Record with guided workflow.

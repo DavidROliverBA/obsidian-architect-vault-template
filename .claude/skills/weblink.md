@@ -1,3 +1,7 @@
+---
+context: fork
+---
+
 # Weblink Capture Skill
 
 Save a URL with AI-generated summary and analysis.

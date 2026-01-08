@@ -1,3 +1,7 @@
+---
+context: fork
+---
+
 # Meeting Note Skill
 
 Create a meeting note with guided prompts.

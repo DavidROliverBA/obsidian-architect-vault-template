@@ -1,3 +1,7 @@
+---
+context: fork
+---
+
 # Quick Task Creation Skill
 
 Quickly create a task note with minimal prompts.
