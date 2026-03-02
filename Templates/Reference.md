@@ -1,6 +1,6 @@
 ---
 type: Reference
-referenceType: null # weblink | youtube | article | book
+referenceType: null # weblink | youtube | article | book | document
 title: null
 created: '<% tp.date.now("YYYY-MM-DD") %>'
 modified: '<% tp.date.now("YYYY-MM-DD") %>'

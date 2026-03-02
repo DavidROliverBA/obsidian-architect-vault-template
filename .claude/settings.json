@@ -15,7 +15,7 @@
   },
   "statusLine": {
     "type": "command",
-    "command": "echo \"📝 $(find . -name '*.md' -not -path './.git/*' -not -path './node_modules/*' -not -path './.obsidian/*' 2>/dev/null | wc -l | tr -d ' ') notes | ✏️ $(git status --porcelain 2>/dev/null | wc -l | tr -d ' ') | 📅 $([ -f \"Daily/$(date +%Y)/$(date +%Y-%m-%d).md\" ] && echo '✓' || echo '✗') | $(date +%H:%M)\""
+    "command": "echo \"📝 $(jq '.nodes | length' .graph/index.json 2>/dev/null || echo '?') notes | ✏️ $(git status --porcelain 2>/dev/null | wc -l | tr -d ' ') | 📅 $([ -f \"Daily/$(date +%Y)/$(date +%Y-%m-%d).md\" ] && echo '✓' || echo '✗') | $(date +%H:%M)\""
   },
   "permissions": {
     "allow": [

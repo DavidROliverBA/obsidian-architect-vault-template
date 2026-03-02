@@ -6,6 +6,7 @@ modified: '<% tp.date.now("YYYY-MM-DD") %>'
 tags:
   - activity/research
 aliases: []
+researchStatus: null # exploratory | validated | production-tested | obsolete
 
 # Scope
 domain: null

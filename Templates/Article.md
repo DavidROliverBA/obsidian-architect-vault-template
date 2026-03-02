@@ -30,6 +30,9 @@ relatedArticles: []
 
 # <% tp.file.title %>
 
+> [!warning] Deprecated Template
+> This template is consolidated into **Reference** with `referenceType: article`. Use the Reference template or `/article` skill for new notes.
+
 ## Summary
 
 ## Key Points

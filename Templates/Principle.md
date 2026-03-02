@@ -32,6 +32,9 @@ summary: null
 
 # <% tp.file.title %>
 
+> [!warning] Deprecated Template
+> This template is consolidated into **Concept** with `conceptType: principle`. Use the Concept template for new notes.
+
 ## The Principle
 
 ## Context
