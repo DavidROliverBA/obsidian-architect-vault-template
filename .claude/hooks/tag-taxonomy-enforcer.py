@@ -10,7 +10,6 @@ Exit Codes:
 """
 
 import json
-import os
 import re
 import sys
 from pathlib import Path
@@ -29,14 +28,15 @@ VALID_HIERARCHIES = {
         "platform", "identity", "analytics", "compliance", "infrastructure"
     ],
     "project": [
-        # Add your project slugs here — this list is not exhaustive
-        # e.g. "my-project", "data-migration", "platform-upgrade"
+        "axia", "caerus", "dispax-ai", "cyber-uplift", "odie",
+        "mro-pro", "777x", "rfid-scanners", "ecp", "snapon", "datasphere"
+        # Note: New projects can be added - this list is not exhaustive
     ],
     "technology": [
         # Platforms & Cloud
         "aws", "azure", "sap", "btp", "ui5", "datasphere", "s4hana",
         # Data & Integration
-        "kafka", "snowflake", "mq", "api", "kong",
+        "kafka", "snowflake", "mq", "api", "kong", "axway",
         # AI & ML
         "bedrock", "langchain", "ai", "ml",
         # Databases
@@ -44,7 +44,7 @@ VALID_HIERARCHIES = {
         # Infrastructure
         "kubernetes", "docker", "terraform", "lambda",
         # Applications
-        "ews", "mro-software", "saas",
+        "amos", "ews", "mro-software", "saas",
         # Languages/Frameworks
         "python", "javascript", "typescript", "java", "go", "rust"
     ],
@@ -237,7 +237,7 @@ def main():
     # Hooks fire for ALL Edit/Write operations regardless of target repo.
     # When working cross-repo (e.g. /tmp/claude/), skip silently to avoid
     # spurious tag warnings on non-vault files.
-    VAULT_ROOT = os.environ.get("CLAUDE_PROJECT_DIR", os.getcwd())
+    VAULT_ROOT = "."
     if not file_path.startswith(VAULT_ROOT):
         sys.exit(0)
 

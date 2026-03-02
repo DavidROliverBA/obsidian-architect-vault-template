@@ -38,7 +38,7 @@ summary: null
 
 # ADR - <% name %>
 
-> **ADR Process**: [[Concept - BA ADR Process (Official)]]
+> **ADR Process**: [[Pattern - BA ADR Process (Official)]]
 >
 > **Required Approvers**: [[Concept - BA ADR Approvers and SME (Official)]]
 

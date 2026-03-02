@@ -45,6 +45,9 @@ recommendedBy: null
 
 # <% tp.file.title %>
 
+> [!warning] Deprecated Template
+> This template is consolidated into **Reference** with `referenceType: book`. Use the Reference template or `/book` skill for new notes.
+
 > **Author**:
 > **Status**: to-read
 

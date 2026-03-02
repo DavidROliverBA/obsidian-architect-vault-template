@@ -15,6 +15,9 @@ relatedTo: []
 
 # <% tp.file.title %>
 
+> [!warning] Deprecated Template
+> This template is consolidated into **Reference** with `referenceType: weblink`. Use the Reference template or `/weblink` skill for new notes.
+
 ## Source
 
 - **URL:**

@@ -1,6 +1,6 @@
 ---
 type: Concept
-conceptType: null # concept | principle | capability | theme
+conceptType: null # concept | principle | capability | theme | analysis | context
 title: null
 created: '<% tp.date.now("YYYY-MM-DD") %>'
 modified: '<% tp.date.now("YYYY-MM-DD") %>'

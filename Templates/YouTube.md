@@ -33,6 +33,9 @@ summary: null
 
 # <% tp.file.title %>
 
+> [!warning] Deprecated Template
+> This template is consolidated into **Reference** with `referenceType: youtube`. Use the Reference template or `/youtube` skill for new notes.
+
 ## Key Insights
 
 -

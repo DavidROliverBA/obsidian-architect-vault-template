@@ -10,7 +10,6 @@ Exit Codes:
 """
 
 import json
-import os
 import re
 import sys
 from pathlib import Path
@@ -199,7 +198,7 @@ def main():
     # Hooks fire for ALL Edit/Write operations regardless of target repo.
     # When working cross-repo (e.g. /tmp/claude/), skip silently to avoid
     # spurious naming convention warnings on non-vault files.
-    VAULT_ROOT = os.environ.get("CLAUDE_PROJECT_DIR", os.getcwd())
+    VAULT_ROOT = "."
     if not file_path.startswith(VAULT_ROOT):
         sys.exit(0)
 

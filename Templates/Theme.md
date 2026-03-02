@@ -14,6 +14,9 @@ relatedTo: []
 
 # <% tp.file.title %>
 
+> [!warning] Deprecated Template
+> This template is consolidated into **Concept** with `conceptType: theme`. Use the Concept template for new notes.
+
 ## Overview
 
 ## Related Content
